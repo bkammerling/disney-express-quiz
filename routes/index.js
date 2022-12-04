@@ -27,7 +27,6 @@ router.get('/quiz/:roundNumber', async function(req, res, next) {
   // Add index to session so we know if user is correct
   session.chosenIndex = chosenIndex;
   
-  console.log(session)
   res.render('index', { 
     title: 'Disney Quiz',
     description: 'Do you know the 10 Disney characters?',
